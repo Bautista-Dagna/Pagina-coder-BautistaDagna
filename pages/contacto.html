@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiricocho Futbol Club </title>
+    <link rel="icon" href="../images/logo quiri.jpeg">
+
+    <!--mas adelante agregar boton con sticky-->
+    <a href="#piedepag"> </a>
+
+
+</head>
+
+
+
+
+<body>
+
+
+    <header>
+
+        <!--PARTE DE ARRRIBA-->
+
+        <div class="presentacion">
+
+
+            <div>
+
+                <div class="escudoTitulo">
+                    <img src="../images/logo quiri.jpeg" alt="logotitulo" id="fotoarriba">
+                    <h1 id="textopres">QUIRICOCHO FUTBOL CLUB</h1>
+                </div>
+
+                <div id="contactobarra"> <a href="contacto.html">Contacto</a> </div>
+            </div>
+
+
+            <!--SEGUNDA BARRA "BUSCADOR"-->
+
+            <nav class="menu">
+                <ul class="encabezado">
+
+                    <li id="elClub">
+                        <a href="elclub.html">EL CLUB</a>
+                    </li>
+
+
+                    <li id="sponsors">
+                        <a href="sponsors.html">SPONSORS</a>
+                    </li>
+
+
+
+
+                    <li class="logo-inicio">
+                        <!--aca poner imagen del logo quiricocho-->
+                        <a href="../index.html" id="logoNav"> <img class="fotoNav" src="../images/logo quiri.jpeg"
+                                alt="logotitulo"> </a>
+
+                    </li>
+
+
+                    <li id="plantel">
+                        <a href="plantel.html">PLANTEL</a>
+                    </li>
+
+
+                    <li id="indumentaria">
+                        <a href="indumentaria.html">INDUMENTARIA</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+
+
+<div>
+        <form>
+            <fieldset>
+                <legend> Datos de contacto</legend>
+
+                <label for="nombre">Nombre/Nickname</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Usuario" required>
+
+              
+
+                <label for="email">Correo electronico </label>
+                <input type="email" name="correo" id="email" placeholder="ejemplo@gmail.com" required>
+            </fieldset>
+        </div>
+
+            <fieldset>
+
+                <div>
+
+                <legend>Posicion a ocupar </legend>
+
+                <!--Posicion jugador -->
+                <div>
+                <select name="posicion" id="posicion" required>
+
+                    <option value="0" selected disabled>POS</option>
+                    <option value="1">PO</option>
+                    <option value="2">DFC</option>
+                    <option value="3">DFD</option>
+                    <option value="4">DFI</option>
+                    <option value="5">MCD</option>
+                    <option value="6">MC</option>
+                    <option value="7">MD</option>
+                    <option value="8">MI</option>
+                    <option value="9">MCO</option>
+                    <option value="10">ED</option>
+                    <option value="11">EI</option>
+                    <option value="12">MP</option>
+                    <option value="13">DC</option>
+
+                </select>
+            </div>
+
+                
+                
+                <!--checbox-->
+                <div>
+                <legend>¿Posee experiencia en otros equipos de alta competitividad?</legend>
+                <label for="si">Si</label>
+                <input type="radio" name="experiencia" value="si" id="si">
+                <label for="no">No</label>
+                <input type="radio" name="experiencia" value="no" id="no">
+            </div>
+
+            
+
+
+                <!--preguntar a thochi por ONLYIF-->
+
+                <label for="comentario">¿En qué equipo? </label>
+
+                <textarea name="comentario" id="comentario" cols="30" rows="2"></textarea>
+
+
+
+                <input type="submit" value="Enviar" id="boton-enviar">
+
+            </fieldset>
+
+
+
+
+
+        </form>
+
+    </div>
+
+
+
+    <footer id="footer">
+        <ul class="ulfooter">
+            <li><a href=""><img id="logoinstagram" src="../images/iconoig.png" alt="logoinstagram"></a></li>
+            <li><a href=""><img id="logotwitter" src="../images/twitterpng.png" alt="logotwitter"> </a> </li>
+        </ul>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
