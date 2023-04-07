@@ -124,8 +124,9 @@ section {
    
    .piedepagina .cajas1 .box p
    {color: #f0f0f2;
-  margin-bottom: 12px;}
-
+  margin-bottom: 12px;
+  text-align: center;}
+  
   .piedepagina .cajas1 .redes-sociales a {
     display: inline-block; 
     width: 40px; 
@@ -143,6 +144,9 @@ section {
 }
 .piedepagina .autor small {font-size: 15px; }
 
+.redes-sociales {
+  display: flex;
+  justify-content: center;}
 
 
 
@@ -152,7 +156,7 @@ section {
 
 
 
-
+.contenido {padding-top: 100px;}
 
 .img-vid-img {
   width: 100%;
@@ -196,14 +200,12 @@ section {
   width: 3vh;
 }
 
-#a-contacto {     margin-right: 20%;}
-
 
 /*                         ::::::::::::::::::::::::::::::::::::::::::ESTILO PLANTEL::::::::::::::::::::::::::::::                        */
 
 
 /*IMAGENES*/
-
+.section-plantel {padding-top: 100px}
 
 .div-plantel {
   width: 100%;
@@ -248,6 +250,7 @@ section {
 
                                           /*::::::::::::::::::::::::::::::::::::::::::ESTILOS SPONSORS::::::::::::::::::::::::::::::*/
 .contenido-sponsors { background-color: bisque;}
+#titulosponsor {padding-top: 100px;}
 .pasodelostoros .adidas {
   width: fit-content;
   height: fit-content;
@@ -287,7 +290,15 @@ h5 {padding: 15px;
   flex-direction: row;
 }
 
+/*            :::::::::::::::::::::::::::::::::ESTILOS contacto::::::::::::::::::::::::::::::::*/
+.contenidocontacto {padding-top: 100px; 
+padding-bottom: 50px;}
 
+.box-contacto-1 {width: 100%;;
+  padding: 20px;}
+
+.fieldset-contacto { width:100%;
+  padding: 20px;}
 
 /*          ::::::::::::::::::::::::::::::::::::::::::::::ESTILOS EL CLUB:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
@@ -309,7 +320,6 @@ background-position: center;}
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"; ;
   text-align: center;
   color: whitesmoke;
-  font-family: ;
   font-size: 30px;
   padding: 10px;}
   .texto-historia {
@@ -330,7 +340,9 @@ background-position: center;}
 
     #figcaptionconjunto {padding: 5px;}
     .contenido-indumentaria { 
-    padding: 10px;
+      
+    padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     width: 100%;
   }
@@ -414,6 +426,7 @@ background-position: center;}
 }
 
 .imageninicio { 
+  display: none;
     margin-top: 300px;
     width: 80px;
     height: 125px;}
@@ -502,13 +515,15 @@ flex-wrap: wrap;
 flex-wrap: nowrap;}
 
 /*media inicio home*/
-.videoinicio {width: 50vh;}
+.videoinicio {width: 45vh;}
 .imageninicio {
   display: none;
 
 }
 
 /*MEDIA SPONSORS*/
+.contenido-sponsors {padding-top: 100px;}
+
 .uno {width: 50vh;}
 
 /*media 576  indumentaria*/
@@ -566,4 +581,3 @@ flex-wrap: nowrap;}
   height: 300px;
   overflow: auto;}
 }
-
