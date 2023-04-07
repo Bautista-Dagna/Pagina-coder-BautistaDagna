@@ -1,58 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--meta desc-->
+    <meta
+      name="description="
+      content="Únete al Quiricocho Fútbol Club, un grupo de amigos apasionados por FIFA Clubes Pro. Descubre un ambiente de competición y diversión en nuestro equipo de jugadores talentosos. En nuestra página encontrarás información sobre nuestro equipo, logros y próximas competiciones. ¡Únete a la diversión ahora!"
+    />
+
     <title>Quiricocho Futbol Club</title>
-</head>
+  </head>
 
-
-
-<body>
-    
-
+  <body>
+    <!--header-->
     <nav>
-        <input type="checkbox" id="check"/>
-        <label for="check" class="checkbtn">
-          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
-        </label>
-        <a href="#" class="enlace"> 
-          <img src="./images/logopng.png" alt="" class="logo">
-        </a>
-        <ul> 
-          <li><a class="active" chref="#">Inicio</a></li>
-          <li><a href="">Contacto</a></li>
-          <li><a href="">El club</a></li>
-          <li><a href="">Indumentaria</a></li>
-          <li><a href="">Plantel</a></li>
-          <li><a href="">Sponsors</a></li>
-        </ul>
-        
-      </nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </label>
+      <a href="#" class="enlace">
+        <img src="./images/logopng.png" alt="" class="logo" />
+      </a>
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="./pages/elclub.html">El club</a></li>
+        <li><a href="./pages/indumentaria.html">Indumentaria</a></li>
+        <li><a href="./pages/plantel.html">Plantel</a></li>
+        <li><a href="./pages/sponsors.html">Sponsors</a></li>
+      </ul>
+    </nav>
 
-      <section class="contenido">
-        
+    <!--contenido-->
+    <section class="contenido">
 
-      </section>
+<div class="img-vid-img">
+      <div class="imageninicio"> <img src="./images/copaclubesdiv1.png" alt=""></div>
 
-<!--:::::FOOTER:::::-->
+      <div class="videoinicio"> <iframe id="iframe-inicio" width="650px" height="400px"
+              src="https://www.youtube.com/embed/8zK6lIXBKvs" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe></div>
 
-      <footer>    </footer>
-
-
-
-
+      <div class="imageninicio"> <img src="./images/copaclubesdiv1.png" alt=""></div>
 
 
 
+  </div>
+<div class="texto-div">
+  <p class="textoinicio" id="masgrande"> Quiricocho, el club de fifa más grande del mundo </p>
+  <p class="textoinicio" id="equipoflia">Jugamos como un equipo, ganamos como familia</p> 
+</div>
+  <div class="estrellainicio"> 
+  
+      <img class="estrellas" src="./images/Mi proyecto.png" alt="" > 
+       <img class="estrellas" src="./images/Mi proyecto.png" alt="">
+      <img class="estrellas" src="./images/Mi proyecto.png" alt="">
+
+      </div>
+
+
+</div>
 
 
 
 
-</body>
+
+
+
+
+
+
+    </section>
+
+    <!--:::::FOOTER:::::-->
+
+    <footer class="piedepagina">
+      <div class="cajas1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="./images/logopng.png" alt="Logo de Quiricocho" />
+            </a>
+          </figure>
+        </div>
+
+        <div class="box">
+          <h2><a id="a-contacto" href="./pages/contacto.html">CONTACTO</a></h2>
+          <p>Contacto para miembros y/o socios</p>
+        </div>
+
+        <div class="box">
+          <h2>REDES SOCIALES</h2>
+          <div class="redes-sociales">
+            <a href="https://www.instagram.com"
+              ><i
+                class="fa-brands fa-instagram fa-bounce"
+                style="color: #ffffff"
+              ></i>
+            </a>
+            <a href="https://twitter.com/home"
+              ><i
+                class="fa-brands fa-twitter fa-bounce"
+                style="color: #3172e3"
+              ></i>
+            </a>
+            <a href="https://www.youtube.com/"
+              ><i
+                class="fa-brands fa-youtube fa-bounce"
+                style="color: #da1010"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="autor">
+        &#169; 2021 <b>Quiricocho Futbol Club</b> Todos los Derechos Reservados
+      </div>
+    </footer>
+  </body>
 </html>

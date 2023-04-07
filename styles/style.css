@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+
+/*evitar que se marque cuando selecciono un html*/
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+/*                              :::::::::::::::::::::::::::::::::::::::::::::::::::::::::HEADER:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 nav {
   background-color: rgb(0, 0, 0);
   height: 80px;
@@ -24,7 +35,7 @@ nav {
 nav ul {
   float: right;
   margin-right: 20px;
-}ss
+}
 
 nav ul li {
   display: inline-block;
@@ -40,8 +51,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-li a.active,
-li a:hover {
+li a.active,li a:hover {
   background: red;
   transition: 1s;
 }
@@ -65,8 +75,321 @@ section {
   background-size: cover;
   background-position: center center;
   height: calc(100vh -80px);
+
+
 }
 
+
+
+
+
+/*                                      ::::::::::::::::::::::::::::::::::::::::::::::::::::::FOOTER:::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+.piedepagina {
+  width: 100%;
+   background-color: black; 
+  color: white;  }
+
+  .piedepagina .cajas1 {
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  
+  }
+
+  .piedepagina .cajas1 .box figure {width: 100%;
+  height:100%;
+   display: flex; 
+   justify-content: center;
+   align-items: center;}
+   .piedepagina .cajas1 .box figure img {width: 60px}
+
+   .piedepagina .cajas1 .box h2 {
+    color:white;
+     margin-bottom: 25px;
+     font-size: 20px ;
+     
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+   
+   .piedepagina .cajas1 .box p
+   {color: #f0f0f2;
+  margin-bottom: 12px;}
+
+  .piedepagina .cajas1 .redes-sociales a {
+    display: inline-block; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 45px; 
+    margin-left: 40px;
+  }
+
+.piedepagina .autor  {background-color: red;
+
+  background-color: red;
+  text-align: center;
+  color: whitesmoke;
+  padding: 15px 10px;
+}
+.piedepagina .autor small {font-size: 15px; }
+
+
+
+
+
+/*             ::::::::::::::::::::::::::::::::::::::::::::::::::::::ESTILOS PAGINA INICIO:::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+
+
+
+.img-vid-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.videoinicio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin: 4vh;
+}
+
+.imageninicio {
+  margin-top: 10%;
+  padding-top: 5vh;
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.textoinicio {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.estrellainicio {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.estrellas {
+  width: 3vh;
+}
+
+#a-contacto {     margin-right: 20%;}
+
+
+/*                         ::::::::::::::::::::::::::::::::::::::::::ESTILO PLANTEL::::::::::::::::::::::::::::::                        */
+
+
+/*IMAGENES*/
+
+
+.div-plantel {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#cajas__plantel {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boxjugadores {
+  width: 250px;
+  height: 300px;
+  border: solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-top: 20px;
+  border-left: 20px;
+  border-right: 20px;
+  border-bottom: 20px;
+  display: inline-block;
+  box-shadow: 4px 2px 8px 3px rgba(255, 141, 141, 0.49);
+  padding: 8px;
+  background-color: rgb(126, 8, 8);
+  
+}
+.boxjugadores {
+	-webkit-animation: boxjugadores 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: boxjugadores 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.imagenpj { 
+  width: 225px;
+  height: 200px;}
+
+
+
+                                          /*::::::::::::::::::::::::::::::::::::::::::ESTILOS SPONSORS::::::::::::::::::::::::::::::*/
+.contenido-sponsors { background-color: bisque;}
+.pasodelostoros .adidas {
+  width: fit-content;
+  height: fit-content;
+  text-align: start;
+  display: inline-block;
+  border-top: 20px;
+  border-right: 20px;
+}
+
+.uno {
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(255, 87, 87, 0.75);
+  -moz-box-shadow: inset 0px 0px 15px 0px rgba(255, 87, 87, 0.75);
+  box-shadow: inset 0px 0px 15px 0px rgba(255, 87, 87, 0.75);
+  border-top: 10px;
+  border-right: 10px;
+}
+
+h5 {padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#titulosponsor {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.sponsor {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+/*          ::::::::::::::::::::::::::::::::::::::::::::::ESTILOS EL CLUB:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.contenido-elclub { width: 100%;padding: 20px;} 
+.hya {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.boxHistoria {
+  width: 60%;
+  height: auto;
+  background-color: rgb(243, 229, 214);
+  overflow: visible;
+  border: 10px;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
+  box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
+}
+
+#tituloHistoria {
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.divimagenes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen33 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+/*autoridades*/
+.boxAutoridades {
+  width: fit-content;
+  height: 350px;
+  padding: 5px;
+  background-color: rgb(243, 229, 214);
+  border-color: grey;
+  border: solid;
+  text-align: center;
+  display: inline-block;
+  overflow: auto;
+  -webkit-box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
+  box-shadow: inset 4px 5px 10px 14px rgba(0, 0, 0, 0.79);
+}
+
+#ulAutoridades {
+  list-style-type: square;
+  text-align: justify;
+}
+
+
+                  /*::::::::::::::::::::::::::::::::::::::ESTILO INDUMENTARIA::::::::::::::::::::::::::::::::::::::::::::::*/
+
+    #figcaptionconjunto {padding: 5px;}
+    .contenido-indumentaria { 
+    padding: 10px;
+    display: flex;
+    width: 100%;
+  }
+
+  .alinearConjunto {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .conjuntoTitular {  font-weight:bold;
+    text-align: center;
+  }
+  .conjuntoSuplente { font-weight:bold;
+    text-align: center;}
+  
+  .imagen-indumentaria {  width: 350px;
+    height: 620px; 
+    box-shadow: 0px 0px 18px 5px rgba(6, 3, 0, 0.29),0px 0px 8px 3px rgba(185, 3, 3, 0.84);
+
+  }
+
+
+/*                                                      ::::::::::::::::::::::::::::::::::::::::::MEDIA QUERIES::::::::::::::::::::::::::::::*/
+
+/*;;;;;;;;;;;;;;;;MEDIA 1200PX;;;;;;;;;;;;;;;*/
 @media (max-width: 1200px) {
   .enlace {
     padding-left: 20px;
@@ -76,6 +399,7 @@ section {
   }
 }
 
+/*;;;;;;;;;;;;;;;;MEDIA 768PX;;;;;;;;;;;;;;;*/
 @media (max-width: 768px) {
   .checkbtn {
     display: block;
@@ -109,8 +433,73 @@ section {
   #check:checked ~ ul {
     left: 0;
   }
+
+  .piedepagina .cajas1 {
+    width: 90%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 35px 0px;}
+  
+  /*media 768 INICIO/HOME*/
+
+  .videonicio {
+    width: 65%;
 }
 
+.imageninicio { 
+    margin-top: 300px;
+    width: 80px;
+    height: 125px;}
+
+.masgrande { 
+    text-align:center;}
+.equipoflia {
+text-align:center;}
+
+/*media 768 El Club*/
+
+
+
+#tituloHistoria {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#historiaclub {
+  font-size: 16px;}
+
+  .boxHistoria {width:50%; height: 260px;}
+  .boxAutoridades {
+    width: fit-content;
+    height: 260px;
+    padding: 5px;
+    background-color: rgb(243, 229, 214);
+    border-color: grey;
+    border: solid;
+    text-align: center;
+    display: inline-block;
+    overflow: auto;
+    -webkit-box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
+    box-shadow: inset 4px 5px 10px 14px rgba(0, 0, 0, 0.79);
+}
+
+/*media 768 induemntaria*/
+.alinearConjunto{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+flex-wrap: wrap;
+}
+
+/*MEDIA EL CLUB*/
+.hya {    flex-wrap: wrap;}
+.boxHistoria {
+  width: 70%;
+  height: 260px;}
+  .boxAutoridades {padding: 5px; 
+  width: 60%; }
+}
+/*;;;;;;;;;;;;;;;;MEDIA 576PX;;;;;;;;;;;;;;;*/
 @media (max-width: 576px) {
   .checkbtn {
     display: block;
@@ -144,6 +533,76 @@ section {
   #check:checked ~ ul {
     left: 0;
   }
+
+  .piedepagina .cajas1 {
+    width: 70%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 35px 0px;
+flex-wrap: nowrap;}
+
+/*media inicio home*/
+.videoinicio {width: 50vh;}
+.imageninicio {
+  display: none;
+
 }
+
+/*MEDIA SPONSORS*/
+.uno {width: 50vh;}
+
+/*media 576  indumentaria*/
+
+.alinearConjunto{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  }
+
+  .imagen-indumentaria {
+    width: 300px;
+    height: 450px;
+
+}
+/*MEDIA EL CLUB*/
+
+
+}
+
+
+/*;;;;;;;;;;;;;;;;MEDIA 375PX;;;;;;;;;;;;;;;*/
+@media (max-width: 375px) {
+
+/*media inicio home*/
+.videoinicio { width: 300px;
+  height: 300px;
+
+}
+
+
+.imageninicio{
+  display: none;}
+
+
+.textoinicio { font-size: 12px; }
+
+.estrellas {width: 2vh;}
+
+#iframe-inicio {width: 300px; width: 300px;}
+
+.texto-div {
+  width: 100%;
+  height: auto;
+  padding-top: 75px;}
+
+/*MEDIA SPONSORS*/
+.uno {width: 35vh;}
+
+/*MEDIA EL CLUB*/
+
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

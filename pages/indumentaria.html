@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Quiricocho Futbol Club</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+<!--animate-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
   </head>
 
   <body>
 
+   
+    <!--HEADER-->
     <nav>
       <input type="checkbox" id="check" />
-      <label for="check" class="checbtn">
-        <i class="fa-solid fa-bars" style="color: #000000"></i>
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
       </label>
-      <a href="" class="enlace"> 
-        <img src="../images/logo quiri.jpeg" alt="">
+      <a href="#" class="enlace">
+        <img src="../images/logopng.png" alt="" class="logo" />
       </a>
-      <ul> 
-        <li><a href="">Inicio</a></li>
+      <ul>
+        <li><a class="active" href="../index.html">Inicio</a></li>
+        <li><a href="elclub.html">El club</a></li>
+        <li><a href="indumentaria.html">Indumentaria</a></li>
+        <li><a href="plantel.html">Plantel</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
       </ul>
-      
     </nav>
 
+    <section class="contenido-indumentaria">
+
+
+      <div class="alinearConjunto">
+        <div class="conjunto">
+          <figure class="conjuntoTitular animate__animated animate__zoomInLeft">
+            <figcaption id="figcaptionconjunto">CONJUNTO TITULAR</figcaption>
+            <img class="imagen-indumentaria" src="../images/uniforme 1x2.png" alt="conjuntoTitular" />
+          </figure>
+        </div>
+
+        <div class="Conjunto">
+          <figure class="conjuntoSuplente animate__animated animate__zoomInRight">
+            <figcaption id="figcaptionconjunto">CONJUNTO SUPLENTE</figcaption>
+            <img class="imagen-indumentaria" src="../images/uniforme 2.png" alt="conjuntoSuplente" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+<!--FOOTER-->
+
+<footer class="piedepagina">
+  <div class="cajas1">
+    <div class="box">
+      <figure>
+        <a href="#">
+          <img src="../images/logopng.png" alt="Logo de Quiricocho" />
+        </a>
+      </figure>
+    </div>
+
+    <div class="box">
+      <h2><a id="a-contacto" href="./pages/contacto.html">CONTACTO</a></h2>
+      <p>Contacto para miembros y/o socios</p>
+    </div>
+
+    <div class="box">
+      <h2>REDES SOCIALES</h2>
+      <div class="redes-sociales">
+        <a href="https://www.instagram.com"
+          ><i
+            class="fa-brands fa-instagram fa-bounce"
+            style="color: #ffffff"
+          ></i>
+        </a>
+        <a href="https://twitter.com/home"
+          ><i
+            class="fa-brands fa-twitter fa-bounce"
+            style="color: #3172e3"
+          ></i>
+        </a>
+        <a href="https://www.youtube.com/"
+          ><i
+            class="fa-brands fa-youtube fa-bounce"
+            style="color: #da1010"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="autor">
+    &#169; 2021 <b>Quiricocho Futbol Club</b> Todos los Derechos Reservados
+  </div>
+</footer>
 
 
   </body>
