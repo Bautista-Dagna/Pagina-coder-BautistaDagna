@@ -21,6 +21,9 @@ nav {
   background-color: rgb(0, 0, 0);
   height: 80px;
   width: 100%;
+
+  position: fixed;
+  z-index: 1;
 }
 
 .enlace {
@@ -288,76 +291,40 @@ h5 {padding: 15px;
 
 /*          ::::::::::::::::::::::::::::::::::::::::::::::ESTILOS EL CLUB:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-.contenido-elclub { width: 100%;padding: 20px;} 
-.hya {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.boxHistoria {
-  width: 60%;
-  height: auto;
-  background-color: rgb(243, 229, 214);
-  overflow: visible;
-  border: 10px;
-  padding: 5px;
+.contenido-elclub { width: 100%; 
+  padding: 120px 30px 40px 30px; 
+  background-image: url(../images/fondo\ qrc2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-attachment: fixed;
+background-position: center;} 
+ 
+.caja-historia { 
+  box-shadow: 1px 10px 28px 0px rgba(15,15,15,0.26);
+  -webkit-box-shadow: 1px 10px 28px 0px rgba(15,15,15,0.26);
+  -moz-box-shadow: 1px 10px 28px 0px rgba(15,15,15,0.26);
+  }
+.titulo-caja-club {color: whitesmoke; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"; ;
   text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  -webkit-box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
-  box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
-}
+  color: whitesmoke;
+  font-family: ;
+  font-size: 30px;
+  padding: 10px;}
+  .texto-historia {
+    text-shadow: 4px 4px 3px rgba(255,255,255,0.27);
+    padding: 5px;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;}
 
-#tituloHistoria {
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.divimagenes {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.imagen33 {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  border: 10px;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  flex-wrap: nowrap;
-  align-content: space-around;
-  justify-content: center;
-}
-
-/*autoridades*/
-.boxAutoridades {
-  width: fit-content;
-  height: 350px;
-  padding: 5px;
-  background-color: rgb(243, 229, 214);
-  border-color: grey;
-  border: solid;
-  text-align: center;
-  display: inline-block;
-  overflow: auto;
-  -webkit-box-shadow: inset 4px 5px 29px 14px rgba(0, 0, 0, 0.79);
-  box-shadow: inset 4px 5px 10px 14px rgba(0, 0, 0, 0.79);
-}
-
-#ulAutoridades {
-  list-style-type: square;
-  text-align: justify;
-}
-
+    .iframe-club {
+      display: flex;
+      padding: 15px;
+      width: 100%;
+      justify-content: center;}
 
                   /*::::::::::::::::::::::::::::::::::::::ESTILO INDUMENTARIA::::::::::::::::::::::::::::::::::::::::::::::*/
 
@@ -491,13 +458,6 @@ width: 100%;
 flex-wrap: wrap;
 }
 
-/*MEDIA EL CLUB*/
-.hya {    flex-wrap: wrap;}
-.boxHistoria {
-  width: 70%;
-  height: 260px;}
-  .boxAutoridades {padding: 5px; 
-  width: 60%; }
 }
 /*;;;;;;;;;;;;;;;;MEDIA 576PX;;;;;;;;;;;;;;;*/
 @media (max-width: 576px) {
@@ -565,8 +525,10 @@ flex-wrap: nowrap;}
     height: 450px;
 
 }
-/*MEDIA EL CLUB*/
+/*MEDIA 576 EL CLUB*/
+.titulo-caja-club {font-size: 20px}
 
+.texto-historia{ font-size: 12px; }
 
 }
 
@@ -600,7 +562,9 @@ flex-wrap: nowrap;}
 .uno {width: 35vh;}
 
 /*MEDIA EL CLUB*/
-
+.caja-historia {
+  height: 300px;
+  overflow: auto;}
 }
 
 
